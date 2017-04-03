@@ -1,0 +1,16 @@
+.ActionHeading-main {
+  
+}
+
+.ActionHeading-name {
+  margin-bottom: 0.5em;
+  font-weight: 700;
+}
+
+.ActionHeading-method {
+  display: inline;
+}
+
+.ActionHeading-main > .uri {
+  font-size: 1rem;
+}

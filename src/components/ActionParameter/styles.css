@@ -1,0 +1,7 @@
+.ActionParameter-main {
+  margin-left: 0.5em;
+}
+
+.ActionParameter-name, .ActionParameter-type {
+  display: inline;
+}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Col, Container, Row } from 'reactstrap';
 import data from '../data.json';
 import logo from '../logo.svg';
 import './App.css';
@@ -38,7 +39,13 @@ class App extends Component {
         </section>
         <br />
         <section className="App-render">
-          <Protagonist source={data} />
+          <Container>
+            <Row>
+              <Col>
+                <Protagonist source={data} />
+              </Col>
+            </Row>
+          </Container>
         </section>
       </div>
     );

@@ -7,6 +7,13 @@ import ResourceGroup from './ResourceGroup';
 import Resources from './Resources';
 import Resource from './Resource';
 import ResourceTitle from './ResourceTitle';
+import URITemplate from './URITemplate';
+import Actions from './Actions';
+import Action from './Action';
+import ActionHeading  from './ActionHeading';
+import ActionParameters  from './ActionParameters';
+import ActionParameter  from './ActionParameter';
+import ActionExample  from './ActionExample';
 
 export default Protagonist;
 
@@ -20,4 +27,11 @@ export {
   Resources,
   Resource,
   ResourceTitle,
+  URITemplate,
+  Actions,
+  Action,
+  ActionHeading,
+  ActionParameters,
+  ActionParameter,
+  ActionExample,
 };
