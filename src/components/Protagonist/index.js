@@ -1,22 +1,24 @@
 import React from 'react';
 import './styles.css';
-import { H1, Description, ResourceGroups } from '../';
+import { ApiTitle, Description, ResourceGroups } from '../';
 
 export default class Protagonist extends React.PureComponent {
+
+  content = source => {
+    return source ? (
+      <div className="Protagonist-content">
+        <ApiTitle title={source.name} />
+        <Description description={source.description} />
+        <ResourceGroups resourceGroups={source.resourceGroups} />
+      </div>
+    ) : <div className="Protagonist-noContent" />;
+  };
+
   render() {
     const { source } = this.props;
     return (
       <div className="Protagonist-main">
-        {!source && <div className="Protagonist-noContent" />}
-        {source && <div className="Protagonist-content">
-          <H1>
-            {source.name}
-          </H1>
-          <Description>
-            {source.description}
-          </Description>
-          <ResourceGroups resourceGroups={source.resourceGroups} />
-        </div>}
+        {this.content(source)}
       </div>
     )
   }

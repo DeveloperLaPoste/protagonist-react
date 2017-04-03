@@ -1,6 +1,6 @@
 import Protagonist from './Protagonist';
-import H1 from './H1';
-import H2 from './H2';
+import ApiTitle from './ApiTitle';
+import ResourceGroupTitle from './ResourceGroupTitle';
 import Description from './Description';
 import ResourceGroups from './ResourceGroups';
 import ResourceGroup from './ResourceGroup';
@@ -12,10 +12,10 @@ export default Protagonist;
 
 export { 
   Protagonist,
-  H1,
-  H2,
+  ApiTitle,
   Description,
   ResourceGroups,
+  ResourceGroupTitle,
   ResourceGroup,
   Resources,
   Resource,

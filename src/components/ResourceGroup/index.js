@@ -1,19 +1,18 @@
 import React from 'react';
-import { H2, Description, Resources } from '../';
+import { ResourceGroupTitle, Description, Resources } from '../';
 
 export default function ResourceGroup({ resourceGroup }) {
+  const resources = resourceGroup.resources ? (
+    <div className="ResourceGroup-content">
+      <Resources resources={resourceGroup.resources} />
+    </div>
+  ) : <div className="ResourceGroup-noContent" />;
+
   return (
     <div className="ResourceGroup-main">
-      <H2>
-        {resourceGroup.name}
-      </H2>
-      <Description>
-        {resourceGroup.description}
-      </Description>
-      {!resourceGroup.resources && <div className="ResourceGroup-noContent" />}
-      {!resourceGroup.resources && <div className="ResourceGroup-content">
-        <Resources resources={resourceGroup.resources} />
-      </div>}
+      <ResourceGroupTitle title={resourceGroup.name} />
+      <Description description={resourceGroup.description} />
+      {resources}
     </div>
   );
 }

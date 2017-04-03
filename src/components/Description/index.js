@@ -1,11 +1,13 @@
 import React from 'react';
 
-export default function Description(props) {
+export default function Description({ description }) {
   return (
-    <p className="description">{props.children}</p>
+    <p className="Description-main">
+      {description}
+    </p>
   );
 }
 
 Description.propTypes = {
-  children: React.PropTypes.node,
+  description: React.PropTypes.string,
 };
