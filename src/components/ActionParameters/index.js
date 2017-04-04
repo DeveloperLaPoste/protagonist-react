@@ -1,6 +1,8 @@
 import React from 'react';
 import { ActionParameter } from '../';
 
+import './styles.css';
+
 export default function ActionParameters({ parameters }) {
   const content = parameters && parameters.length ? (
     <div className="ActionParameters-content">

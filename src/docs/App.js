@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { Col, Container, Row } from 'reactstrap';
+
 import data from '../data.json';
 import logo from '../logo.svg';
-import './App.css';
 import Protagonist from '../components';
+
+import './App.css';
+import './github-gist.css';
 
 class App extends Component {
   render() {
