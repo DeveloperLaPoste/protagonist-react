@@ -2,6 +2,6 @@
   margin-left: 0.5em;
 }
 
-.ActionParameter-name, .ActionParameter-type {
-  display: inline;
+.ActionParameter-main:first-of-type > td {
+  border-top: none;
 }

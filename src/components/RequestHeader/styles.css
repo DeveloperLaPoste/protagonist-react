@@ -1,0 +1,7 @@
+.RequestHeader-row:first-of-type > td {
+  border-top: none;
+}
+
+.RequestHeader-row > td > pre {
+  margin-bottom: 0;
+}

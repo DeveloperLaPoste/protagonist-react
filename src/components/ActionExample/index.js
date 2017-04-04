@@ -1,11 +1,10 @@
 import React from 'react';
 
-import { RequestExample, ResponseExample } from '../'
+import { RequestExample, ResponseExample } from '../';
 
 export default function ActionExample({ example }) {
-
   const requestsResponses = example.requests && example.responses &&
-  example.requests.length === example.responses.length ? (
+  example.requests.length <= example.responses.length ? (
     <div className="ActionExample-content">
       {example.requests.map((request, index) => (
         <div key={index}>
@@ -27,5 +26,5 @@ ActionExample.propTypes = {
   example: React.PropTypes.shape({
     requests: React.PropTypes.array,
     responses: React.PropTypes.array,
-  }),
+  }).isRequired,
 };

@@ -4,15 +4,19 @@ import './styles.css';
 
 export default function ActionParameter({ parameter }) {
   return (
-    <div className="ActionParameter-main">
-      <div className="ActionParameter-name">{parameter.name}</div>{' '}
-      <code className="ActionParameter-type">{parameter.type}</code>{' '}
-      {parameter.required && <span className="ActionParameter-required">(requis){' '}</span>}
-      <span className="text-muted ActionParameter-example">
+    <tr className="ActionParameter-main">
+      <td className="ActionParameter-name">
+        {parameter.name}
+      </td>
+      <td className="ActionParameter-type">
+        <code>{parameter.type}</code>
+        {parameter.required && <span className="ActionParameter-required">(requis){' '}</span>}
+      </td>
+      <td className="text-muted ActionParameter-example">
         <strong>Exemple:{' '}</strong>
         <span>{parameter.example}</span>
-      </span>
-    </div>
+      </td>
+    </tr>
   );
 }
 
@@ -22,5 +26,5 @@ ActionParameter.propTypes = {
     type: React.PropTypes.string,
     required: React.PropTypes.bool,
     example: React.PropTypes.string,
-  }),
+  }).isRequired,
 };

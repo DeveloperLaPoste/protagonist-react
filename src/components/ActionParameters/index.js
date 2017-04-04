@@ -7,7 +7,9 @@ export default function ActionParameters({ parameters }) {
   const content = parameters && parameters.length ? (
     <div className="ActionParameters-content">
       <h4>Paramètres</h4>
-      {parameters.map((parameter, key) => <ActionParameter parameter={parameter} key={key} />)}
+      <table className="table">
+        <tbody>{parameters.map(parameter => <ActionParameter parameter={parameter} key={parameter.name} />)}</tbody>
+      </table>
     </div>
   ) : <div className="ActionParameters-noContent" />;
   return (
@@ -19,4 +21,8 @@ export default function ActionParameters({ parameters }) {
 
 ActionParameters.propTypes = {
   parameters: React.PropTypes.array,
+};
+
+ActionParameters.defaultProps = {
+  parameters: [],
 };

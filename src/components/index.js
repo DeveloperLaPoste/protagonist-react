@@ -10,19 +10,19 @@ import ResourceTitle from './ResourceTitle';
 import URITemplate from './URITemplate';
 import Actions from './Actions';
 import Action from './Action';
-import ActionHeading  from './ActionHeading';
-import ActionParameters  from './ActionParameters';
-import ActionParameter  from './ActionParameter';
-import ActionExamples  from './ActionExamples';
-import ActionExample  from './ActionExample';
-import RequestExample  from './RequestExample';
-import ResponseExample  from './ResponseExample';
-import RequestHeaders  from './RequestHeaders';
-import RequestHeader  from './RequestHeader';
+import ActionHeading from './ActionHeading';
+import ActionParameters from './ActionParameters';
+import ActionParameter from './ActionParameter';
+import ActionExamples from './ActionExamples';
+import ActionExample from './ActionExample';
+import RequestExample from './RequestExample';
+import ResponseExample from './ResponseExample';
+import RequestHeaders from './RequestHeaders';
+import RequestHeader from './RequestHeader';
 
 export default Protagonist;
 
-export { 
+export {
   Protagonist,
   ApiTitle,
   Description,
