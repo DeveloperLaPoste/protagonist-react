@@ -25,10 +25,7 @@ Protagonist must be used with options `{ type: 'ast' }`.
 
 ## TODO
 
--[ ] Static website documentation for all components
-
--[ ] Testing !!!
-
--[ ] Customization
-
--[ ] More generalist lib 
+- [ ] Static website documentation for all components
+- [ ] Testing !!!
+- [ ] Customization
+- [ ] More generalist lib 
