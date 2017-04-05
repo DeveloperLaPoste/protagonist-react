@@ -1,4 +1,5 @@
 import Protagonist from './Protagonist';
+import HighlightJS from './HighlightJS';
 import ApiTitle from './ApiTitle';
 import ResourceGroupTitle from './ResourceGroupTitle';
 import Description from './Description';
@@ -16,14 +17,20 @@ import ActionParameter from './ActionParameter';
 import ActionExamples from './ActionExamples';
 import ActionExample from './ActionExample';
 import RequestExample from './RequestExample';
-import ResponseExample from './ResponseExample';
 import RequestHeaders from './RequestHeaders';
 import RequestHeader from './RequestHeader';
+import ResponseExample from './ResponseExample';
+import Body from './Body';
+import Schema from './Schema';
+import { Accordion, AccordionItem } from './Accordion';
 
 export default Protagonist;
 
 export {
   Protagonist,
+  HighlightJS,
+  Accordion,
+  AccordionItem,
   ApiTitle,
   Description,
   ResourceGroups,
@@ -41,7 +48,9 @@ export {
   ActionExamples,
   ActionExample,
   RequestExample,
-  ResponseExample,
   RequestHeaders,
   RequestHeader,
+  ResponseExample,
+  Body,
+  Schema,
 };

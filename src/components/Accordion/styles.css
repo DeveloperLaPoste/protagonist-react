@@ -1,0 +1,29 @@
+.AccordionItem-header {
+  transition: border-color 1s ease;
+}
+
+.AccordionItem-header:hover {
+  cursor: pointer;
+}
+
+.AccordionItem-noBorder {
+  border-bottom: transparent;
+}
+
+.Accordion-main > .AccordionItem-main > .AccordionItem-header > i {
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.AccordionItem-rotate {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.Accordion-main {
+  margin-bottom: 1rem;
+}

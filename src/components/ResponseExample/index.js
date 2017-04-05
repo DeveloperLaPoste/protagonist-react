@@ -1,13 +1,29 @@
 import React from 'react';
+import { RequestHeaders, Body, Schema } from '../';
 
 import './styles.css';
 
 export default function ResponseExample({ response }) {
+  const headers = response.headers && response.headers.length ? (
+    <RequestHeaders headers={response.headers} />
+  ) : <div className="ResponseExample-noHeaders" />;
+
+  const body = response.body ? (
+    <Body body={response.body} />
+  ) : <div className="ResponseExample-noBody" />;
+
+  const schema = response.schema ? (
+    <Schema schema={response.schema} />
+  ) : <div className="ResponseExample-noSchema" />;
+
   return (
     <div className="ResponseExample-main">
       <div className="ResponseExample-heading">
         <strong>Réponse <code>{response.name}</code></strong>
       </div>
+      {headers}
+      {body}
+      {schema}
     </div>
   );
 }
@@ -15,5 +31,11 @@ export default function ResponseExample({ response }) {
 ResponseExample.propTypes = {
   response: React.PropTypes.shape({
     name: React.PropTypes.string,
+    headers: React.PropTypes.array,
+    body: React.PropTypes.string,
   }),
+};
+
+ResponseExample.defaultProps = {
+  response: {},
 };

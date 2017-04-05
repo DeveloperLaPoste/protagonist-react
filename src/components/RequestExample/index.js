@@ -1,11 +1,9 @@
 import React from 'react';
-
-import { RequestHeaders } from '../'
+import { RequestHeaders } from '../';
 
 import './styles.css';
 
 export default function RequestExample({ request }) {
-
   const headers = request.headers && request.headers.length ? (
     <RequestHeaders headers={request.headers} />
   ) : <div className="RequestExample-noHeaders" />;
@@ -24,4 +22,8 @@ RequestExample.propTypes = {
   request: React.PropTypes.shape({
     name: React.PropTypes.string,
   }),
+};
+
+RequestExample.defaultProps = {
+  request: {},
 };
