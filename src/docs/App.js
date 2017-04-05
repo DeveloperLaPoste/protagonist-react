@@ -43,7 +43,7 @@ function App() {
         <Container>
           <Row>
             <Col>
-              <Protagonist source={data} />
+              <Protagonist source={{}} />
             </Col>
           </Row>
         </Container>

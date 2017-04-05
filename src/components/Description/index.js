@@ -11,3 +11,7 @@ export default function Description({ description }) {
 Description.propTypes = {
   description: React.PropTypes.string,
 };
+
+Description.defaultProps = {
+  description: '',
+};
