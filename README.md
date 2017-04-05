@@ -1,4 +1,4 @@
-# protagonist-react
+# protagonist-react [![Build Status](https://travis-ci.org/DeveloperLaPoste/protagonist-react.svg?branch=master)](https://travis-ci.org/DeveloperLaPoste/protagonist-react)
 
 This project is made, in first place, for the [developer.laposte.fr](https://developer.laposte.fr) website for render API documentation from API Blueprint.
 
@@ -29,4 +29,5 @@ Protagonist must be used with options `{ type: 'ast' }`.
 - [ ] Static website documentation for all components
 - [ ] Testing !!!
 - [ ] Customization
-- [ ] More generalist lib 
+- [ ] More generalist lib
+- [ ] Add Storybook
