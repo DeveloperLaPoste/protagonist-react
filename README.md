@@ -25,6 +25,7 @@ Protagonist must be used with options `{ type: 'ast' }`.
 
 ## TODO
 
+- [ ] Add a JSON as API documentation example
 - [ ] Static website documentation for all components
 - [ ] Testing !!!
 - [ ] Customization

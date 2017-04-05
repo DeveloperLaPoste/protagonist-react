@@ -10,5 +10,9 @@ export default function ResourceGroups({ resourceGroups }) {
 }
 
 ResourceGroups.propTypes = {
-  resourceGroups: React.PropTypes.array.isRequired,
+  resourceGroups: React.PropTypes.array,
+};
+
+ResourceGroups.defaultProps = {
+  resourceGroups: [],
 };
