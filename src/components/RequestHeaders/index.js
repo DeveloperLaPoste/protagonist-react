@@ -5,7 +5,7 @@ import { RequestHeader } from '../';
 export default function RequestHeaders({ headers }) {
   return (
     <div className="RequestHeaders-main">
-      <h5>EnTêtes</h5>
+      {headers && headers.length > 0 && <h5>EnTêtes</h5>}
       <table className="table">
         <tbody>{
           headers.map(header => (
@@ -18,5 +18,9 @@ export default function RequestHeaders({ headers }) {
 }
 
 RequestHeaders.propTypes = {
-  headers: React.PropTypes.array.isRequired,
+  headers: React.PropTypes.array,
+};
+
+RequestHeaders.defaultProps = {
+  headers: [],
 };

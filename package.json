@@ -32,7 +32,8 @@
     "eslint-plugin-jsx-a11y": "4.0.0",
     "eslint-plugin-react": "6.10.3",
     "react-addons-test-utils": "15.4.2",
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+    "@kadira/storybook": "2.21.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,6 +41,8 @@
     "test": "react-scripts test --env=jsdom",
     "coverage": "npm test -- --coverage",
     "eject": "react-scripts eject",
-    "prebuild": "BABEL_ENV=production rm -rf lib && babel src/components --out-dir lib --ignore test.js"
+    "prebuild": "BABEL_ENV=production rm -rf lib && babel src/components --out-dir lib --ignore test.js,stories.js",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   }
 }
