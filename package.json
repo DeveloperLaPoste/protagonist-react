@@ -2,13 +2,23 @@
   "name": "protagonist-react",
   "version": "0.1.0",
   "private": true,
+  "main": "lib/index.js",
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",
+    "font-awesome": "4.7.0",
+    "highlight.js": "9.10.0",
     "react": "15.4.2",
     "react-addons-css-transition-group": "15.4.2",
     "react-addons-transition-group": "15.4.2",
     "react-dom": "15.4.2",
     "reactstrap": "4.5.0"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0",
+    "react-dom": "^0.14.0 || ^15.0.0",
+    "reactstrap": "^4.5.0",
+    "highlight.js": "^9.10.0",
+    "font-awesome": "^4.7.0"
   },
   "devDependencies": {
     "babel-cli": "6.24.0",
@@ -27,6 +37,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "prebuild": "babel src/components --out-dir lib --ignore test.js"
+    "prebuild": "BABEL_ENV=production rm -rf lib && babel src/components --out-dir lib --ignore test.js"
   }
 }
