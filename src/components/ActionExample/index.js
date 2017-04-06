@@ -3,7 +3,7 @@ import React from 'react';
 import { RequestExample, ResponseExample } from '../';
 
 export default function ActionExample({ example }) {
-  const requestsResponses = example.requests && example.responses &&
+  const requestsResponses = example.requests && example.responses && example.requests.length > 0 &&
   example.requests.length <= example.responses.length ? (
     <div className="ActionExample-content">
       {example.requests.map((request, index) => (
@@ -26,5 +26,12 @@ ActionExample.propTypes = {
   example: React.PropTypes.shape({
     requests: React.PropTypes.array,
     responses: React.PropTypes.array,
-  }).isRequired,
+  }),
+};
+
+ActionExample.defaultProps = {
+  example: {
+    requests: [],
+    responses: [],
+  },
 };

@@ -18,18 +18,24 @@ export default function ActionHeading({ name, method, uri }) {
         return 'default';
     }
   };
-  
+
   return (
     <h4 className="ActionHeading-main">
-      <div className="ActionHeading-name">{name}</div>
-      <Badge className="ActionHeading-method" color={getColor()}>{method}</Badge>
-      <code className="uri">{uri}</code>
+      {name && <div className="ActionHeading-name">{name}</div>}
+      {method && <Badge className="ActionHeading-method" color={getColor()}>{method}</Badge>}
+      {uri && <code className="uri">{uri}</code>}
     </h4>
   );
 }
 
 ActionHeading.propTypes = {
-  name: React.PropTypes.string, 
-  method: React.PropTypes.string, 
+  name: React.PropTypes.string,
+  method: React.PropTypes.string,
   uri: React.PropTypes.string,
+};
+
+ActionHeading.defaultProps = {
+  name: '',
+  method: '',
+  uri: '',
 };

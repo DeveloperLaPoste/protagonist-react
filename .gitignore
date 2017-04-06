@@ -21,5 +21,6 @@ yarn-error.log*
 .idea
 
 
-# custom files
+# custom data files
 src/data.json
+src/codeDeLaRoute.json

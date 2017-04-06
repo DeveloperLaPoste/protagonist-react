@@ -27,7 +27,9 @@ Protagonist must be used with options `{ type: 'ast' }`.
 
 - [ ] Add a JSON as API documentation example
 - [ ] Static website documentation for all components
-- [ ] Testing !!!
+- [x] Add Enzyme for tests
+- [ ] each component tested
 - [ ] Customization
 - [ ] More generalist lib
-- [ ] Add Storybook
+- [x] Add Storybook
+- [ ] Add React-Intl

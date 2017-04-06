@@ -7,6 +7,7 @@ import Protagonist, { HighlightJS } from '../components';
 import './App.css';
 import './github-gist.css';
 
+// const data = require('../codeDeLaRoute.json');
 const data = {};
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
         <Container>
           <Row>
             <Col>
-              <Protagonist source={{}} />
+              <Protagonist source={data} />
             </Col>
           </Row>
         </Container>
