@@ -1,10 +1,13 @@
 import React from 'react';
+import { Markdown } from '../';
+
+import './styles.css';
 
 export default function Description({ description }) {
   return (
-    <p className="Description-main">
-      {description}
-    </p>
+    <div className="Description-main">
+      <Markdown markdown={description} />
+    </div>
   );
 }
 

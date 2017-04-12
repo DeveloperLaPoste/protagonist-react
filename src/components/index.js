@@ -1,5 +1,6 @@
 import Protagonist from './Protagonist';
 import HighlightJS from './HighlightJS';
+import Markdown from './Markdown';
 import ApiTitle from './ApiTitle';
 import ResourceGroupTitle from './ResourceGroupTitle';
 import Description from './Description';
@@ -29,6 +30,7 @@ export default Protagonist;
 export {
   Protagonist,
   HighlightJS,
+  Markdown,
   Accordion,
   AccordionItem,
   ApiTitle,
