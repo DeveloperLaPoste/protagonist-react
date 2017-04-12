@@ -1,4 +1,3 @@
-
 export const action = {
   name: 'Users',
   method: 'GET',
@@ -74,3 +73,65 @@ export const description = 'Bienvenue sur l\'API Code De La Route.\n\nCette API 
   '![creationCompte](https://s30.postimg.org/s3j2o7boh/sequence_etg_01_compte_partenaire.png)\n\n' +
   '![reservation1](https://s30.postimg.org/qprfswcf5/sequence_etg_02_reservation.png)\n\n' +
   '![reservation2](https://s30.postimg.org/a39vjtjhd/sequence_etg_03_reservation_modifs.png)\n\n\n';
+
+export const requestExample = {
+  name: '',
+  description: '',
+  headers: [
+    {
+      name: 'Content-Type',
+      value: 'application/json',
+    },
+    {
+      name: 'X-Okapi-Key',
+      value: 'mkB7uT+FNj3Sijtk7RXu1BMRbOmgn/MuJWVFmcfoloi0n/zLy2++V/nm6gatpQzX',
+    },
+  ],
+  body: '{\n  "nomContact": "Test",\n  "prenomContact": "Test",\n  "civiliteContact": "M",\n' +
+  '  "emailContact": "test.test@yopmail.com",\n  "telephone": "0678621545",\n  "role": "PARTENAIRE",\n  "codeAurige": null,\n  "siret": "404 833 048 00022",\n  "raisonSociale": "Code de la Route",\n  "typeEntreprise": "SARL",\n  "typePaiement": "SEPA",\n  "codePostal": "92400",\n  "localite": "Courbevoie",\n  "numVoie": "125",\n  "nomVoie": "Rue Louis-Blanc",\n  "ligneComp1": "10ième étage"\n}\n',
+  schema: '{\n  "type": "object",\n  "properties": {\n    "nomContact": {\n      "type": "string",\n' +
+  '      "description": "Nom du contact"\n    },\n    "prenomContact": {\n      "type": "string",\n' +
+  '      "description": "Prénom du contact"\n    },\n    "civiliteContact": {\n      "type": "string",\n' +
+  '      "description": "Civilité du contact (M ou Mme)"\n    },\n    "emailContact": {\n      "type":' +
+  ' "string",\n      "description": "Email du contact"\n    },\n    "telephone": {\n      "type":' +
+  ' "string",\n      "description": "Numéro de téléphone du contact"\n    },\n    "role": {\n      "type":' +
+  ' "string",\n      "description": "Role du contact (PARTENAIRE, UTILISATEUR_PARTENAIRE, AUTO_ECOLE)"\n' +
+  '    },\n    "codeAurige": {\n      "type": "string",\n      "description": "Si présent , doit' +
+  ' correspondre à un code Aurige existant dans le SI du ministère de l\'Intérieur. Obligatoire si role =' +
+  ' AUTO_ECOLE"\n    },\n    "siret": {\n      "type": "string",\n      "description": "Obligatoire si role = PARTENAIRE ou role = AUTO_ECOLE"\n    },\n    "raisonSociale": {\n      "type": "string",\n      "description": "Obligatoire si role = PARTENAIRE ou role = AUTO_ECOLE"\n    },\n    "typeEntreprise": {\n      "type": "string",\n      "description": "Obligatoire si role = PARTENAIRE ou role = AUTO_ECOLE"\n    },\n    "typePaiement": {\n      "type": "string",\n      "description": "SEPA ou Cb"\n    },\n    "numVoie": {\n      "type": "string",\n      "description": "Numéro de voie de l\'adresse"\n    },\n    "nomVoie": {\n      "type": "string",\n      "description": "Nom de la voie de l\'adresse"\n    },\n    "codePostal": {\n      "type": "string",\n      "description": "Code postal de l\'adresse"\n    },\n    "localite": {\n      "type": "string",\n      "description": "Localite de l\'adresse"\n    },\n    "ligneComp1": {\n      "type": "string",\n      "description": "Ligne complémentaire 1 de l\'adresse"\n    },\n    "ligneComp2": {\n      "type": "string",\n      "description": "Ligne complémentaire 1 de l\'adresse"\n    },\n    "ligneComp3": {\n      "type": "string",\n      "description": "Ligne complémentaire 1 de l\'adresse"\n    }\n  },\n  "required": [\n    "nomContact",\n    "prenomContact",\n    "civiliteContact",\n    "emailContact",\n    "telephone",\n    "role",\n    "nomVoie",\n    "codePostal",\n    "localite"\n  ]\n}\n',
+  content: [
+    {
+      element: 'asset',
+      attributes: {
+        role: 'bodyExample',
+      },
+      content: '{\n  "nomContact": "Test",\n  "prenomContact": "Test",\n  "civiliteContact": "M",\n  "emailContact":' +
+      ' "test.test@yopmail.com",\n  "telephone": "0678621545",\n  "role": "PARTENAIRE",\n  "codeAurige": null,\n' +
+      '  "siret": "404 833 048 00022",\n  "raisonSociale": "Code de la Route",\n  "typeEntreprise": "SARL",\n  "typePaiement": "SEPA",\n  "codePostal": "92400",\n  "localite": "Courbevoie",\n  "numVoie": "125",\n  "nomVoie": "Rue Louis-Blanc",\n  "ligneComp1": "10ième étage"\n}\n',
+    },
+    {
+      element: 'asset',
+      attributes: {
+        role: 'bodySchema',
+      },
+      content: '{\n  "type": "object",\n  "properties": {\n    "nomContact": {\n      "type": "string",\n' +
+      '      "description": "Nom du contact"\n    },\n    "prenomContact": {\n      "type": "string",\n' +
+      '      "description": "Prénom du contact"\n    },\n    "civiliteContact": {\n      "type": "string",\n' +
+      '      "description": "Civilité du contact (M ou Mme)"\n    },\n    "emailContact": {\n      "type": "string",' +
+      '\n      "description": "Email du contact"\n    },\n    "telephone": {\n      "type": "string",\n      ' +
+      '"description": "Numéro de téléphone du contact"\n    },\n    "role": {\n      "type": "string",\n      ' +
+      '"description": "Role du contact (PARTENAIRE, UTILISATEUR_PARTENAIRE, AUTO_ECOLE)"\n    },\n    ' +
+      '"codeAurige": {\n      "type": "string",\n      "description": "Si présent , doit correspondre à un code ' +
+      'Aurige existant dans le SI du ministère de l\'Intérieur. Obligatoire si role = AUTO_ECOLE"\n    },\n' +
+      '    "siret": {\n      "type": "string",\n      "description": "Obligatoire si role = PARTENAIRE ou role =' +
+      ' AUTO_ECOLE"\n    },\n    "raisonSociale": {\n      "type": "string",\n      "description": "Obligatoire si' +
+      ' role = PARTENAIRE ou role = AUTO_ECOLE"\n    },\n    "typeEntreprise": {\n      "type": "string",\n' +
+      '      "description": "Obligatoire si role = PARTENAIRE ou role = AUTO_ECOLE"\n    },\n    "typePaiement": {\n' +
+      '      "type": "string",\n      "description": "SEPA ou Cb"\n    },\n    "numVoie": {\n      "type":' +
+      ' "string",\n      "description": "Numéro de voie de l\'adresse"\n    },\n    "nomVoie": {\n      "type":' +
+      ' "string",\n      "description": "Nom de la voie de l\'adresse"\n    },\n    "codePostal": {\n      "type":' +
+      ' "string",\n      "description": "Code postal de l\'adresse"\n    },\n    "localite": {\n      "type": ' +
+      '"string",\n      "description": "Localite de l\'adresse"\n    },\n    "ligneComp1": {\n      "type": "string",\n      "description": "Ligne complémentaire 1 de l\'adresse"\n    },\n    "ligneComp2": {\n      "type": "string",\n      "description": "Ligne complémentaire 1 de l\'adresse"\n    },\n    "ligneComp3": {\n      "type": "string",\n      "description": "Ligne complémentaire 1 de l\'adresse"\n    }\n  },\n  "required": [\n    "nomContact",\n    "prenomContact",\n    "civiliteContact",\n    "emailContact",\n    "telephone",\n    "role",\n    "nomVoie",\n    "codePostal",\n    "localite"\n  ]\n}\n',
+    },
+  ],
+};

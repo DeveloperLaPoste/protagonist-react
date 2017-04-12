@@ -1,10 +1,11 @@
 import React from 'react';
-import { ActionHeading, ActionExamples, ActionParameters } from '../';
+import { ActionHeading, ActionExamples, ActionParameters, Description } from '../';
 
 export default function Action({ action }) {
   return (
     <div className="Action-main">
       <ActionHeading name={action.name} method={action.method} uri={action.attributes.uriTemplate} />
+      <Description description={action.description} />
       <ActionParameters parameters={action.parameters} />
       <ActionExamples examples={action.examples} />
     </div>

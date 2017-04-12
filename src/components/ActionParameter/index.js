@@ -13,8 +13,8 @@ export default function ActionParameter({ parameter }) {
         {parameter.required && <span className="ActionParameter-required">(requis){' '}</span>}
       </td>
       <td className="text-muted ActionParameter-example">
-        <strong>Exemple:{' '}</strong>
-        <span>{parameter.example}</span>
+        {parameter.example && <strong>Exemple:{' '}</strong>}
+        {parameter.example && <span>{parameter.example}</span>}
       </td>
     </tr>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { RequestHeaders, Body, Schema } from '../';
+import { RequestHeaders, Description, Body, Schema } from '../';
 
 import './styles.css';
 
@@ -7,6 +7,10 @@ export default function ResponseExample({ response }) {
   const headers = response.headers && response.headers.length ? (
     <RequestHeaders headers={response.headers} />
   ) : <div className="ResponseExample-noHeaders" />;
+
+  const description = response.body ? (
+    <Description description={response.description} />
+  ) : <div className="ResponseExample-noDescription" />;
 
   const body = response.body ? (
     <Body body={response.body} />
@@ -22,6 +26,7 @@ export default function ResponseExample({ response }) {
         <strong>Réponse <code>{response.name}</code></strong>
       </div>
       {headers}
+      {description}
       {body}
       {schema}
     </div>

@@ -3,12 +3,12 @@ import { Col, Container, Row } from 'reactstrap';
 
 import logo from '../logo.svg';
 import Protagonist, { HighlightJS } from '../components';
+import data from '../codeDeLaRoute.json';
 
 import './App.css';
 import './github-gist.css';
 
-// const data = require('../codeDeLaRoute.json');
-const data = {};
+// const data = {};
 
 function App() {
   return (
@@ -34,7 +34,6 @@ function App() {
         </ul>
       </section>
       <p className="App-content">
-
       </p>
       <section className="App-example">
         <HighlightJS code={JSON.stringify(data)} />
