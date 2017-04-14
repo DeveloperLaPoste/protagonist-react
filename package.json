@@ -1,7 +1,6 @@
 {
   "name": "protagonist-react",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
   "main": "lib/index.js",
   "jest": {
     "collectCoverageFrom": [
@@ -20,6 +19,11 @@
       }
     }
   },
+  "files": [
+    "LICENSE.md",
+    "README.md",
+    "lib"
+  ],
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",
     "dompurify": "0.8.5",
@@ -33,11 +37,14 @@
     "reactstrap": "4.5.0"
   },
   "peerDependencies": {
+    "bootstrap": "^4.0.0-alpha",
+    "dompurify": "^0.8.5",
     "font-awesome": "^4.7.0",
     "highlight.js": "^9.10.0",
+    "marked": "^0.3.6",
     "react": "^0.14.0 || ^15.0.0",
     "react-dom": "^0.14.0 || ^15.0.0",
-    "reactstrap": "^4.5.0"
+    "reactstrap": "^4.0.0"
   },
   "devDependencies": {
     "@kadira/storybook": "2.21.0",
@@ -60,7 +67,7 @@
     "test": "react-scripts test --env=jsdom",
     "coverage": "npm test -- --coverage --collectCoverageFrom=src/**/*.js --collectCoverageFrom=!src/**/*.stories.js --collectCoverageFrom=!src/stories/**/*.js",
     "eject": "react-scripts eject",
-    "prebuild": "BABEL_ENV=production rm -rf lib && babel src/components --out-dir lib --ignore test.js,stories.js",
+    "prebuild": "BABEL_ENV=production rm -rf lib && babel src/components --out-dir lib --ignore test.js,stories.js --copy-files",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   }
