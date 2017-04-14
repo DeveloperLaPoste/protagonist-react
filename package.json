@@ -1,6 +1,6 @@
 {
   "name": "protagonist-react",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "main": "lib/index.js",
   "jest": {
     "collectCoverageFrom": [
