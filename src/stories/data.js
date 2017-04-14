@@ -1,6 +1,7 @@
 export const action = {
   name: 'Users',
   method: 'GET',
+  description: '',
   attributes: { uriTemplate: '/api/v1/foo/users/:id' },
   parameters: [{
     name: 'userId',

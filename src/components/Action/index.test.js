@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Action, ActionHeading, ActionParameters, ActionExamples } from '../';
+import { Action, ActionHeading, ActionParameters, ActionExamples, Description } from '../';
 import { action } from '../../stories/data';
 
 describe('Action Element', () => {
@@ -9,6 +9,7 @@ describe('Action Element', () => {
     const div = (
       <div className="Action-main">
         <ActionHeading name="" method="" uri="" />
+        <Description description={''} />
         <ActionParameters parameters={[]} />
         <ActionExamples examples={[]} />
       </div>
@@ -20,6 +21,7 @@ describe('Action Element', () => {
     const render = shallow(<Action action={action} />);
     const divs = [
       <ActionHeading name="Users" method="GET" uri="/api/v1/foo/users/:id" />,
+      <Description description={''} />,
       <ActionParameters
         parameters={[{
           name: 'userId',

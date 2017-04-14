@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Protagonist, { ApiTitle, Description, ResourceGroups } from '../';
+import Protagonist, { ApiTitle, Description, ResourceGroups, Summary } from '../';
 
 describe('Protagonist Element', () => {
   it('renders without crashing without content', () => {
@@ -17,6 +17,7 @@ describe('Protagonist Element', () => {
     const render = shallow(<Protagonist source={{}} />);
     const children = [
       <ApiTitle title="" className="" />,
+      <Summary resourceGroups={[]} />,
       <Description description="" />,
       <ResourceGroups resourceGroups={[]} />,
     ];
