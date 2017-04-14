@@ -22,5 +22,9 @@ ResourceGroup.propTypes = {
     name: React.PropTypes.string,
     description: React.PropTypes.string,
     resources: React.PropTypes.array,
-  }).isRequired,
+  }),
+};
+
+ResourceGroup.defaultProps = {
+  resourceGroup: {},
 };

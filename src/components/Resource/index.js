@@ -3,9 +3,9 @@ import { Actions } from '../';
 
 import './styles.css';
 
-export default function Resource({ resource }) {
+export default function Resource({ id, resource }) {
   return (
-    <div className="Resource-main">
+    <div id={id} className="Resource-main">
       <Actions actions={resource.actions} />
     </div>
   );
@@ -17,4 +17,9 @@ Resource.propTypes = {
     description: React.PropTypes.string,
     uriTemplate: React.PropTypes.string,
   }).isRequired,
+  id: React.PropTypes.string,
+};
+
+Resource.defaultProps = {
+  id: '',
 };

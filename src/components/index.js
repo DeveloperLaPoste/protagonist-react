@@ -5,6 +5,7 @@ import ApiTitle from './ApiTitle';
 import ResourceGroupTitle from './ResourceGroupTitle';
 import Description from './Description';
 import ResourceGroups from './ResourceGroups';
+import Summary from './Summary';
 import ResourceGroup from './ResourceGroup';
 import Resources from './Resources';
 import Resource from './Resource';
@@ -36,6 +37,7 @@ export {
   ApiTitle,
   Description,
   ResourceGroups,
+  Summary,
   ResourceGroupTitle,
   ResourceGroup,
   Resources,

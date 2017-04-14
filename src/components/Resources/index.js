@@ -5,7 +5,7 @@ export default function Resources({ resources }) {
   return (
     <div className="Resources-main">
       {resources.map((resource, key) => (
-        <Resource resource={resource} key={key} />
+        <Resource id={`resource-${key}`} resource={resource} key={key} />
       ))}
     </div>
   );
