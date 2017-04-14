@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from '../';
 
 const itemStyle = {
   display: 'flex',
@@ -13,7 +14,19 @@ export default function Summary({ resourceGroups }) {
         <div className="Summary-resource" key={index}>
           <h4>{resourceGroup.name}</h4>
           {resourceGroup.resources.map((resource, key) => (
-            <a href={`#resource-${key}`} key={key} style={itemStyle}>{resource.name}</a>
+            <Link
+              href=""
+              activeClass="Summary-active"
+              style={itemStyle}
+              to={resource.name}
+              spy
+              smooth
+              offset={50}
+              duration={500}
+              key={key}
+            >
+              {resource.name}
+            </Link>
           ))}
         </div>
       ))}

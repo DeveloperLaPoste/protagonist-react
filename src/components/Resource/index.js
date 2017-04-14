@@ -1,4 +1,6 @@
 import React from 'react';
+import { Element } from 'react-scroll';
+
 import { Actions } from '../';
 
 import './styles.css';
@@ -6,7 +8,9 @@ import './styles.css';
 export default function Resource({ id, resource }) {
   return (
     <div id={id} className="Resource-main">
-      <Actions actions={resource.actions} />
+      <Element name={resource.name}>
+        <Actions actions={resource.actions} />
+      </Element>
     </div>
   );
 }

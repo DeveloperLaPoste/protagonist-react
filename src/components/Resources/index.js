@@ -1,6 +1,8 @@
 import React from 'react';
 import { Resource } from '../';
 
+window.summaryItems = {};
+
 export default function Resources({ resources }) {
   return (
     <div className="Resources-main">
@@ -12,5 +14,9 @@ export default function Resources({ resources }) {
 }
 
 Resources.propTypes = {
-  resources: React.PropTypes.array.isRequired,
+  resources: React.PropTypes.array,
+};
+
+Resources.defaultProps = {
+  resources: [],
 };
