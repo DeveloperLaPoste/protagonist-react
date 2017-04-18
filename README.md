@@ -16,12 +16,40 @@ Protagonist.propTypes = {
 };
 ```
 
+## Example
+
+```jsx harmony
+import React from 'react';
+import { Protagonist } from 'protagonist-react';
+
+function MyComponent({apibJson}) {
+  return (
+    <div>
+      <Protagonist source={apibJson} />
+    </div>
+  );
+}
+```
+
 This `source` props is a JSON generated via [protagonist](https://github.com/apiaryio/protagonist) which is a nodeJS library for transforming API Blueprint files (.apib) in JSON.
 
 
 ## Protagonist
 
 Protagonist must be used with options `{ type: 'ast' }`.
+
+The JSON should look like :
+
+```json
+{
+  "_version": "4.0",
+  "metadata": [],
+  "name": "My API",
+  "description": "",
+  "element": "category",
+  "resourceGroups": []
+}
+```
 
 ## TODO
 
