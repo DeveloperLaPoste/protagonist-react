@@ -15,7 +15,7 @@ export default function RequestExample({ request }) {
   return (
     <div className="RequestExample-main">
       <div className="RequestExample-heading">
-        <strong>Requête <code>{request.name}</code></strong>
+        <strong>Requête {request.name && request.name.trim() && <code>{request.name}</code>}</strong>
       </div>
       {headers}
       {description}
@@ -32,5 +32,7 @@ RequestExample.propTypes = {
 };
 
 RequestExample.defaultProps = {
-  request: {},
+  request: {
+    name: '',
+  },
 };
