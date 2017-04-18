@@ -38,7 +38,7 @@ This `source` props is a JSON generated via [protagonist](https://github.com/api
 
 Protagonist must be used with options `{ type: 'ast' }`.
 
-The JSON should look like :
+The JSON should looks like :
 
 ```json
 {
