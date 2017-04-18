@@ -9,11 +9,13 @@ export default function ActionHeading({ name, method, uri }) {
       case 'GET':
         return 'success';
       case 'POST':
-        return 'danger';
+        return 'default';
       case 'PATCH':
         return 'info';
       case 'PUT':
-        return 'warning';
+        return 'primary';
+      case 'DELETE':
+        return 'danger';
       default:
         return 'default';
     }
@@ -22,8 +24,8 @@ export default function ActionHeading({ name, method, uri }) {
   return (
     <h4 className="ActionHeading-main">
       {name && <div className="ActionHeading-name">{name}</div>}
-      {method && <Badge className="ActionHeading-method" color={getColor()}>{method}</Badge>}
-      {uri && <code className="uri">{uri}</code>}
+      {method.trim() && <Badge className="ActionHeading-method" color={getColor()}>{method}</Badge>}
+      {uri.trim() && <code className="uri">{uri}</code>}
     </h4>
   );
 }

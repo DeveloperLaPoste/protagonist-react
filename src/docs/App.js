@@ -4,12 +4,13 @@ import { Col, Container, Row } from 'reactstrap';
 import logo from '../logo.svg';
 import Protagonist, { HighlightJS } from '../components';
 // import data from '../codeDeLaRoute.json';
-import data from '../data.json';
+// import data from '../tarifEnvoi.json';
+// import data from '../data.json';
 
 import './App.css';
 import './github-gist.css';
 
-// const data = {};
+const data = {};
 
 function App() {
   return (

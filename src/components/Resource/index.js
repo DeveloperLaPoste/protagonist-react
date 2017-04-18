@@ -9,7 +9,7 @@ export default function Resource({ id, resource }) {
   return (
     <div id={id} className="Resource-main">
       <Element name={resource.name}>
-        <Actions actions={resource.actions} />
+        <Actions actions={resource.actions} uriTemplate={resource.uriTemplate} />
       </Element>
     </div>
   );
