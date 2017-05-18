@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { ActionParameter } from '../';
 
@@ -20,7 +21,7 @@ export default function ActionParameters({ parameters }) {
 }
 
 ActionParameters.propTypes = {
-  parameters: React.PropTypes.array,
+  parameters: PropTypes.array,
 };
 
 ActionParameters.defaultProps = {

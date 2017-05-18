@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { ApiTitle, Description, ResourceGroups, Summary } from '../';
 import './styles.css';
@@ -24,7 +25,7 @@ export default class Protagonist extends React.PureComponent {
 }
 
 Protagonist.propTypes = {
-  source: React.PropTypes.object,
+  source: PropTypes.object,
 };
 
 Protagonist.defaultProps = {

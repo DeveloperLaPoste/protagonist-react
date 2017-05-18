@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { Helpers } from 'react-scroll';
 
@@ -10,7 +11,7 @@ function Link(props) {
 }
 
 Link.propTypes = {
-  children: React.PropTypes.string,
+  children: PropTypes.string,
 };
 
 Link.defaultProps = {

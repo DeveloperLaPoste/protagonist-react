@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { Element } from 'react-scroll';
 
@@ -16,12 +17,12 @@ export default function Resource({ id, resource }) {
 }
 
 Resource.propTypes = {
-  resource: React.PropTypes.shape({
-    name: React.PropTypes.string,
-    description: React.PropTypes.string,
-    uriTemplate: React.PropTypes.string,
+  resource: PropTypes.shape({
+    name: PropTypes.string,
+    description: PropTypes.string,
+    uriTemplate: PropTypes.string,
   }).isRequired,
-  id: React.PropTypes.string,
+  id: PropTypes.string,
 };
 
 Resource.defaultProps = {

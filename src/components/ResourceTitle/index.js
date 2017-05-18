@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 export default function ResourceTitle({ title, className }) {
@@ -9,6 +10,6 @@ export default function ResourceTitle({ title, className }) {
 }
 
 ResourceTitle.propTypes = {
-  title: React.PropTypes.string,
-  className: React.PropTypes.string,
+  title: PropTypes.string,
+  className: PropTypes.string,
 };

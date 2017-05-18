@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import { HighlightJS } from '../';
@@ -12,7 +13,7 @@ export default function Body({ body }) {
 }
 
 Body.propTypes = {
-  body: React.PropTypes.string,
+  body: PropTypes.string,
 };
 
 Body.defaultProps = {

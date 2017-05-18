@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { Description, RequestHeaders, Body, Schema } from '../';
 
@@ -26,8 +27,8 @@ export default function RequestExample({ request }) {
 }
 
 RequestExample.propTypes = {
-  request: React.PropTypes.shape({
-    name: React.PropTypes.string,
+  request: PropTypes.shape({
+    name: PropTypes.string,
   }),
 };
 

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import { Accordion, AccordionItem, HighlightJS } from '../';
@@ -13,7 +14,7 @@ export default function Schema({ schema }) {
 }
 
 Schema.propTypes = {
-  schema: React.PropTypes.string,
+  schema: PropTypes.string,
 };
 
 Schema.defaultProps = {

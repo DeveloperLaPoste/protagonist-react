@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { ResourceGroupTitle, Description, Resources } from '../';
 
@@ -18,10 +19,10 @@ export default function ResourceGroup({ resourceGroup }) {
 }
 
 ResourceGroup.propTypes = {
-  resourceGroup: React.PropTypes.shape({
-    name: React.PropTypes.string,
-    description: React.PropTypes.string,
-    resources: React.PropTypes.array,
+  resourceGroup: PropTypes.shape({
+    name: PropTypes.string,
+    description: PropTypes.string,
+    resources: PropTypes.array,
   }),
 };
 

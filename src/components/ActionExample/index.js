@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import { RequestExample, ResponseExample } from '../';
@@ -23,9 +24,9 @@ export default function ActionExample({ example }) {
 }
 
 ActionExample.propTypes = {
-  example: React.PropTypes.shape({
-    requests: React.PropTypes.array,
-    responses: React.PropTypes.array,
+  example: PropTypes.shape({
+    requests: PropTypes.array,
+    responses: PropTypes.array,
   }),
 };
 

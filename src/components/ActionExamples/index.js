@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { ActionExample } from '../';
 
@@ -17,5 +18,5 @@ export default function ActionExamples({ examples }) {
 }
 
 ActionExamples.propTypes = {
-  examples: React.PropTypes.array,
+  examples: PropTypes.array,
 };

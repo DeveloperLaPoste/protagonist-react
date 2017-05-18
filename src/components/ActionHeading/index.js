@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { Badge } from 'reactstrap';
 
@@ -31,9 +32,9 @@ export default function ActionHeading({ name, method, uri }) {
 }
 
 ActionHeading.propTypes = {
-  name: React.PropTypes.string,
-  method: React.PropTypes.string,
-  uri: React.PropTypes.string,
+  name: PropTypes.string,
+  method: PropTypes.string,
+  uri: PropTypes.string,
 };
 
 ActionHeading.defaultProps = {

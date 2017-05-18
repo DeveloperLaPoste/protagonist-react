@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 /**
  *
  * Accordion
@@ -18,7 +19,7 @@ export function Accordion(props) {
 }
 
 Accordion.propTypes = {
-  children: React.PropTypes.oneOfType([React.PropTypes.node, React.PropTypes.func]),
+  children: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
 };
 
 Accordion.defaultProps = {
@@ -64,9 +65,9 @@ export class AccordionItem extends React.Component {
 }
 
 AccordionItem.propTypes = {
-  title: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.object]).isRequired,
-  children: React.PropTypes.oneOfType([React.PropTypes.node, React.PropTypes.func]),
-  onClick: React.PropTypes.func,
+  title: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
+  onClick: PropTypes.func,
 };
 
 AccordionItem.defaultProps = {

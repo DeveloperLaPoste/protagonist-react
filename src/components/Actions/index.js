@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { Action } from '../';
 
@@ -12,8 +13,8 @@ export default function Actions({ actions, uriTemplate }) {
 }
 
 Actions.propTypes = {
-  actions: React.PropTypes.array,
-  uriTemplate: React.PropTypes.string,
+  actions: PropTypes.array,
+  uriTemplate: PropTypes.string,
 };
 
 Actions.defaultProps = {

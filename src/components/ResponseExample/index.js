@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { RequestHeaders, Description, Body, Schema } from '../';
 
@@ -34,10 +35,10 @@ export default function ResponseExample({ response }) {
 }
 
 ResponseExample.propTypes = {
-  response: React.PropTypes.shape({
-    name: React.PropTypes.string,
-    headers: React.PropTypes.array,
-    body: React.PropTypes.string,
+  response: PropTypes.shape({
+    name: PropTypes.string,
+    headers: PropTypes.array,
+    body: PropTypes.string,
   }),
 };
 

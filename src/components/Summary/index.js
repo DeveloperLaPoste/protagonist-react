@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from '../';
 
@@ -35,7 +36,7 @@ export default function Summary({ resourceGroups }) {
 }
 
 Summary.propTypes = {
-  resourceGroups: React.PropTypes.array,
+  resourceGroups: PropTypes.array,
 };
 
 Summary.defaultProps = {

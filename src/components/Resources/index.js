@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { Resource } from '../';
 
@@ -14,7 +15,7 @@ export default function Resources({ resources }) {
 }
 
 Resources.propTypes = {
-  resources: React.PropTypes.array,
+  resources: PropTypes.array,
 };
 
 Resources.defaultProps = {

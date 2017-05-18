@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import hljs from 'highlight.js';
 
@@ -26,7 +27,7 @@ export default class HighlightJS extends React.PureComponent {
 }
 
 HighlightJS.propTypes = {
-  code: React.PropTypes.string,
+  code: PropTypes.string,
 };
 
 HighlightJS.defaultProps = {

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import './styles.css';
@@ -21,10 +22,10 @@ export default function ActionParameter({ parameter }) {
 }
 
 ActionParameter.propTypes = {
-  parameter: React.PropTypes.shape({
-    name: React.PropTypes.string,
-    type: React.PropTypes.string,
-    required: React.PropTypes.bool,
-    example: React.PropTypes.string,
+  parameter: PropTypes.shape({
+    name: PropTypes.string,
+    type: PropTypes.string,
+    required: PropTypes.bool,
+    example: PropTypes.string,
   }).isRequired,
 };

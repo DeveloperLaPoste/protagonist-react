@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { Markdown } from '../';
 
@@ -12,7 +13,7 @@ export default function Description({ description }) {
 }
 
 Description.propTypes = {
-  description: React.PropTypes.string,
+  description: PropTypes.string,
 };
 
 Description.defaultProps = {

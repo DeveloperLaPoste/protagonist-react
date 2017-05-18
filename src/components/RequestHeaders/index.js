@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import { RequestHeader } from '../';
@@ -18,7 +19,7 @@ export default function RequestHeaders({ headers }) {
 }
 
 RequestHeaders.propTypes = {
-  headers: React.PropTypes.array,
+  headers: PropTypes.array,
 };
 
 RequestHeaders.defaultProps = {

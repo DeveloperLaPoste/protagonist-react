@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import './styles.css';
@@ -18,9 +19,9 @@ export default function RequestHeader({ header }) {
 }
 
 RequestHeader.propTypes = {
-  header: React.PropTypes.shape({
-    name: React.PropTypes.string,
-    value: React.PropTypes.string,
+  header: PropTypes.shape({
+    name: PropTypes.string,
+    value: PropTypes.string,
   }),
 };
 

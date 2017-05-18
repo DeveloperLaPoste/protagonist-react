@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import './styles.css';
@@ -11,6 +12,6 @@ export default function ResourceGroupTitle({ className, title }) {
 }
 
 ResourceGroupTitle.propTypes = {
-  className: React.PropTypes.string,
-  title: React.PropTypes.string,
+  className: PropTypes.string,
+  title: PropTypes.string,
 };

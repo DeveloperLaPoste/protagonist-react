@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { ResourceGroup } from '../';
 
@@ -10,7 +11,7 @@ export default function ResourceGroups({ resourceGroups }) {
 }
 
 ResourceGroups.propTypes = {
-  resourceGroups: React.PropTypes.array,
+  resourceGroups: PropTypes.array,
 };
 
 ResourceGroups.defaultProps = {

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import './styles.css';
@@ -11,8 +12,8 @@ export default function ApiTitle({ className, title }) {
 }
 
 ApiTitle.propTypes = {
-  className: React.PropTypes.string,
-  title: React.PropTypes.string,
+  className: PropTypes.string,
+  title: PropTypes.string,
 };
 
 ApiTitle.defaultProps = {

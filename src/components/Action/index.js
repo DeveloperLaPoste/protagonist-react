@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { ActionHeading, ActionExamples, ActionParameters, Description } from '../';
 
@@ -13,16 +14,16 @@ export default function Action({ action, uriTemplate }) {
 }
 
 Action.propTypes = {
-  action: React.PropTypes.shape({
-    name: React.PropTypes.string,
-    method: React.PropTypes.string,
-    attributes: React.PropTypes.shape({
-      uriTemplate: React.PropTypes.string,
+  action: PropTypes.shape({
+    name: PropTypes.string,
+    method: PropTypes.string,
+    attributes: PropTypes.shape({
+      uriTemplate: PropTypes.string,
     }),
-    parameters: React.PropTypes.array,
-    examples: React.PropTypes.array,
+    parameters: PropTypes.array,
+    examples: PropTypes.array,
   }),
-  uriTemplate: React.PropTypes.string,
+  uriTemplate: PropTypes.string,
 };
 
 Action.defaultProps = {

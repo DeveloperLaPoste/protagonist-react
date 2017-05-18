@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import marked from 'marked';
 import hljs from 'highlight.js';
@@ -20,7 +21,7 @@ export default function Markdown({ markdown }) {
 }
 
 Markdown.propTypes = {
-  markdown: React.PropTypes.string,
+  markdown: PropTypes.string,
 };
 
 Markdown.defaultProps = {
