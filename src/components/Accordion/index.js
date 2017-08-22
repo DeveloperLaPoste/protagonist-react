@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 /**
  *
  * Accordion
@@ -6,6 +5,7 @@ import PropTypes from 'prop-types';
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Card, CardHeader, CardBlock, Collapse } from 'reactstrap';
 
 import './styles.css';
