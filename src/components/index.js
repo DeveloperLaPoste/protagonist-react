@@ -10,6 +10,7 @@ import Summary from './Summary';
 import ResourceGroup from './ResourceGroup';
 import Resources from './Resources';
 import Resource from './Resource';
+import ResourceHeading from './ResourceHeading';
 import ResourceTitle from './ResourceTitle';
 import URITemplate from './URITemplate';
 import Actions from './Actions';
@@ -44,6 +45,7 @@ export {
   ResourceGroup,
   Resources,
   Resource,
+  ResourceHeading,
   ResourceTitle,
   URITemplate,
   Actions,
