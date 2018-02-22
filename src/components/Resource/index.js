@@ -2,13 +2,14 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Element } from 'react-scroll';
 
-import { Actions } from '../';
+import { Actions, Description } from '../';
 
 import './styles.css';
 
 export default function Resource({ id, resource }) {
   return (
     <div id={id} className="Resource-main">
+      <Description description={resource.description} />
       <Element name={resource.name}>
         <Actions actions={resource.actions} uriTemplate={resource.uriTemplate} />
       </Element>
