@@ -25,7 +25,8 @@ export default function ActionHeading({ name, method, uri }) {
   return (
     <h4 className="ActionHeading-main">
       {name && <div className="ActionHeading-name">{name}</div>}
-      {method.trim() && <Badge className="ActionHeading-method" color={getColor()}>{method}</Badge>}
+      {method.trim() &&
+      <Badge className={`ActionHeading-method ${method.toLowerCase()}`} color={getColor()}>{method}</Badge>}
       {uri.trim() && <code className="uri">{uri}</code>}
     </h4>
   );
