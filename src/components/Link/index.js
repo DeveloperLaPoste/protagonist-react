@@ -4,7 +4,10 @@ import { Helpers } from 'react-scroll';
 
 function Link(props) {
   return (
-    <a {...props}>
+    <a
+      aOnClick={this.props.aOnClick}
+      {...props}
+    >
       {props.children}
     </a>
   );
@@ -12,10 +15,12 @@ function Link(props) {
 
 Link.propTypes = {
   children: PropTypes.string,
+  aOnClick: PropTypes.func,
 };
 
 Link.defaultProps = {
   children: '',
+  aOnClick: () => {},
 };
 
 export default Helpers.Scroll(Link);

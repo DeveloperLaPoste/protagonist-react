@@ -8,7 +8,7 @@ export default class Protagonist extends React.PureComponent {
   content = source => source ? (
     <div className="Protagonist-content">
       <ApiTitle title={source.name} />
-      <Summary resourceGroups={source.resourceGroups} />
+      <Summary resourceGroups={source.resourceGroups} aOnClick={this.props.aOnClick} />
       <Description description={source.description} />
       <ResourceGroups resourceGroups={source.resourceGroups} />
     </div>
@@ -26,8 +26,10 @@ export default class Protagonist extends React.PureComponent {
 
 Protagonist.propTypes = {
   source: PropTypes.object,
+  aOnClick: PropTypes.func,
 };
 
 Protagonist.defaultProps = {
   source: null,
+  aOnClick: () => {},
 };
