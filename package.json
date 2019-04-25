@@ -1,5 +1,5 @@
 {
-  "name": "protagonist-react",
+  "name": "@laposte-okapi/protagonist-react",
   "version": "0.1.14",
   "main": "lib/index.js",
   "jest": {
