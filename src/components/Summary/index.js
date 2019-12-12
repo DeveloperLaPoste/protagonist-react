@@ -25,7 +25,7 @@ export default function Summary({ resourceGroups }) {
               offset={50}
               duration={500}
               key={key}
-              aOnClick={this.props.aOnClick}
+              addActionToLink={this.props.addActionToLink}
             >
               {resource.name}
             </Link>
@@ -38,10 +38,10 @@ export default function Summary({ resourceGroups }) {
 
 Summary.propTypes = {
   resourceGroups: PropTypes.array,
-  aOnClick: PropTypes.func,
+  addActionToLink: PropTypes.func,
 };
 
 Summary.defaultProps = {
   resourceGroups: [],
-  aOnClick: () => {},
+  addActionToLink: () => {},
 };
