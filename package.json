@@ -1,6 +1,6 @@
 {
   "name": "@laposte-okapi/protagonist-react",
-  "version": "0.1.15",
+  "version": "0.2.0",
   "main": "lib/index.js",
   "jest": {
     "collectCoverageFrom": [
