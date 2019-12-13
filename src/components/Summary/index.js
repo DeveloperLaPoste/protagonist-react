@@ -7,7 +7,7 @@ const itemStyle = {
   flexDirection: 'column',
 };
 
-export default function Summary({ resourceGroups }) {
+export default function Summary({ resourceGroups, addActionToLink }) {
   return (
     <div className="Summary-main" style={{ marginBottom: '1em' }}>
       <h3>Sommaire</h3>
@@ -25,6 +25,7 @@ export default function Summary({ resourceGroups }) {
               offset={50}
               duration={500}
               key={key}
+              onClick={addActionToLink}
             >
               {resource.name}
             </Link>
@@ -37,8 +38,10 @@ export default function Summary({ resourceGroups }) {
 
 Summary.propTypes = {
   resourceGroups: PropTypes.array,
+  addActionToLink: PropTypes.func,
 };
 
 Summary.defaultProps = {
   resourceGroups: [],
+  addActionToLink: null,
 };
