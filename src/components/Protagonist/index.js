@@ -31,5 +31,5 @@ Protagonist.propTypes = {
 
 Protagonist.defaultProps = {
   source: null,
-  addActionToLink: () => {},
+  addActionToLink: null,
 };
