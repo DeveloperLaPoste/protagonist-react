@@ -35,7 +35,7 @@
     "dompurify": "0.8.5",
     "font-awesome": "4.7.0",
     "highlight.js": "9.10.0",
-    "marked": "0.3.6",
+    "marked": "4.0.10",
     "prop-types": "15.5.10",
     "react-dom-factories": "1.0.1",
     "react-scroll": "1.5.4",
